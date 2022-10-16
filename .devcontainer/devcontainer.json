@@ -1,0 +1,19 @@
+{
+  "name": "Qwik & Payload template",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "qwik-app",
+  "workspaceFolder": "/workspace",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "unifiedjs.vscode-mdx",
+        "mongodb.mongodb-vscode",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+
+  "postCreateCommand": "yarn"
+}
