@@ -1,5 +1,5 @@
-import { component$, Resource } from "@builder.io/qwik";
-import { RequestHandler, useEndpoint } from "@builder.io/qwik-city";
+import { DocumentHead, RequestHandler, useEndpoint } from "@builder.io/qwik-city";
+import { Resource, component$ } from "@builder.io/qwik";
 
 type UserData = {
   id: string;
@@ -45,3 +45,7 @@ export default component$(() => {
     />
   );
 });
+
+export const head: DocumentHead = {
+  title: 'Payload Integration',
+};

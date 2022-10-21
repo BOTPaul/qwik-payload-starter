@@ -10,7 +10,9 @@
         "dbaeumer.vscode-eslint",
         "unifiedjs.vscode-mdx",
         "mongodb.mongodb-vscode",
-        "esbenp.prettier-vscode"
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+        "amatiasq.sort-imports"
       ]
     }
   },

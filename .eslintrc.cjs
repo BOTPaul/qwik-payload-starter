@@ -36,5 +36,6 @@ module.exports = {
     'no-case-declarations': 'off',
     'no-console': 'off',
     '@typescript-eslint/no-unused-vars': ['error'],
+    'sort-imports': ["error"]
   },
 };

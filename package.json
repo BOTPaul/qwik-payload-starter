@@ -1,6 +1,9 @@
 {
   "private": true,
-  "workspaces": ["./qwik-starter-template", "./payload-starter-template"],
+  "workspaces": [
+    "./qwik-starter-template",
+    "./payload-starter-template"
+  ],
   "scripts": {
     "dev:payload": "yarn workspace payload-starter-template dev",
     "dev:qwik": "yarn workspace qwik-starter-template dev"

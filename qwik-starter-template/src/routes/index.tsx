@@ -1,11 +1,11 @@
-import { component$ } from '@builder.io/qwik';
-import type { DocumentHead } from '@builder.io/qwik-city';
-import { Link } from '@builder.io/qwik-city';
+import type { DocumentHead } from "@builder.io/qwik-city";
+import { Link } from "@builder.io/qwik-city";
+import { component$ } from "@builder.io/qwik";
 
 export default component$(() => {
   return (
     <div>
-      <h1>
+      <h1 class="text-3xl my-4">
         Welcome to Qwik <span class="lightning">⚡️</span>
       </h1>
 
@@ -21,9 +21,9 @@ export default component$(() => {
         </li>
       </ul>
 
-      <h2>Commands</h2>
+      <h2 class="text-2xl my-2">Commands</h2>
 
-      <table class="commands">
+      <table>
         <tr>
           <td>
             <code>npm run dev</code>
@@ -50,9 +50,9 @@ export default component$(() => {
         </tr>
       </table>
 
-      <h2>Add Integrations</h2>
+      <h2 class="text-2xl my-2">Add Integrations</h2>
 
-      <table class="commands">
+      <table>
         <tr>
           <td>
             <code>npm run qwik add cloudflare-pages</code>
@@ -98,7 +98,7 @@ export default component$(() => {
         </tr>
       </table>
 
-      <h2>Community</h2>
+      <h2 class="text-2xl my-2">Community</h2>
 
       <ul>
         <li>
@@ -127,16 +127,29 @@ export default component$(() => {
           </a>
         </li>
       </ul>
-      <Link class="mindblow" href="/flower">
-        Blow my mind 🤯
-      </Link>
-      <Link class="mindblow" href="/payload">
-        Show me Payload integration
-      </Link>
+
+      <ul class="mt-4">
+        <li>
+          <Link
+            class="underline text-blue-500 hover:text-blue-800"
+            href="/flower"
+          >
+            Blow my mind 🤯
+          </Link>
+        </li>
+        <li>
+          <Link
+            class="underline text-blue-500 hover:text-blue-800"
+            href="/payload"
+          >
+            Show me Payload integration
+          </Link>
+        </li>
+      </ul>
     </div>
   );
 });
 
 export const head: DocumentHead = {
-  title: 'Welcome to Qwik',
+  title: "Welcome to Qwik",
 };
